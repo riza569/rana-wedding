@@ -24,3 +24,42 @@
 @media (max-width:600px){.site-header{height:66px;padding:0 17px}.wordmark{font-size:26px}.wordmark small{font-size:7px}.header-actions{gap:7px}.music-toggle{padding:10px 11px;font-size:10px}.header-rsvp{padding:11px 12px;font-size:10px}.hero-main{padding:108px 17px 100px}.hero-title{font-size:clamp(88px,20vw,117px);letter-spacing:-.08em}.hero-title b{font-size:47px}.hero-intro{font-size:13px}.hero-cta{gap:17px}.hero-cta .primary-btn{padding:15px 19px;gap:15px}.hero-art{height:360px}.moon-disc,.moon-shadow{width:210px;height:210px}.moon-shadow{transform:translate(52px,-42px)}.moon-badge{bottom:-1%;padding:14px 16px;right:0;transform:rotate(5deg)}.moon-badge strong{font-size:40px}.moon-badge span,.moon-badge small{font-size:7px}.orbit{width:83%}.orbit-two{width:67%}.moon-star1{top:10%;right:7%}.moon-star2{bottom:22%;left:7%}.moon-art-label{bottom:14%;font-size:7px}.section-inner{padding:0 20px}.invitation-section,.events-section,.location-section,.rsvp-section{padding:78px 0}.invitation-grid,.count-layout,.location-grid,.rsvp-layout{gap:55px}.invite-art{max-width:290px}.invite-ring{width:140px;height:140px;left:calc(50% - 86px)}.ring-b{left:calc(50% - 32px)}.invitation-copy h2,.section-heading h2,.rsvp-intro h2,.location-details h2{font-size:73px}.invitation-copy .section-p{font-size:14px}.family-block strong{font-size:21px}.count-section{padding:72px 0}.count-layout h2{font-size:65px}.count-display{gap:5px}.count-display>div{border-radius:9px;padding:18px 0}.count-display strong{font-size:44px}.count-display span{font-size:7px;letter-spacing:.06em}.event-grid{grid-template-columns:1fr;gap:18px}.event-card{min-height:445px;padding:34px}.event-card h3{font-size:59px}.event-date>span{font-size:84px}.section-heading>p:last-child{margin-bottom:31px}.map-top{display:block}.map-top strong{display:block;text-align:left;margin-top:8px}.map-panel iframe{height:340px}.rsvp-form{padding:26px 20px}.form-row{gap:8px}.radio-duo{gap:6px}.radio-duo label span{font-size:9px;padding:12px 5px}.opening h1{font-size:60px}.invite-envelope{margin:28px auto 14px}.opening-sub{font-size:12px}.opening-inner{padding:8px 0}.closing-controls{gap:16px;flex-direction:column}.scroll-prompt{display:none}}
 @media (max-width:375px){.hero-title{font-size:83px}.hero-cta{gap:14px}.hero-copy{max-width:285px}.event-card{padding:30px 24px}.rsvp-form{padding:25px 16px}.family-block strong{font-size:20px}.map-panel iframe{height:280px}.location-details .primary-btn{font-size:10px}}
 @media (prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.001ms!important;transition-duration:.001ms!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
+
+/* RSVP mobile display fix */
+.rsvp-section {
+  background: #f3edf5 !important;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+/* Remove the oversized decorative symbol */
+.rsvp-decoration {
+  display: none !important;
+}
+
+.rsvp-intro,
+.rsvp-form {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 600px) {
+  .rsvp-section {
+    padding: 70px 0 85px;
+  }
+
+  .rsvp-intro h2 {
+    font-size: clamp(48px, 12vw, 70px);
+    line-height: 1.05;
+  }
+
+  .rsvp-intro > p {
+    line-height: 1.7;
+  }
+
+  .rsvp-form {
+    width: 100%;
+    max-width: 100%;
+  }
+}
