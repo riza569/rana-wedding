@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Rana & Sadique//Wedding//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:nikkah-20261108@ranasadique.invite
+DTSTAMP:20261016T000000Z
+DTSTART;VALUE=DATE:20261108
+DTEND;VALUE=DATE:20261109
+SUMMARY:Rana & Sadique — Nikkah (After Dhuhr Prayer)
+DESCRIPTION:Nikkah after Dhuhr Prayer at Groom's Residence. Exact time will be confirmed by the family.
+LOCATION:Baithul Mahabba\, Maloor\, Kannur\, Kerala 670673
+END:VEVENT
+END:VCALENDAR
